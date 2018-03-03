@@ -1,0 +1,19 @@
+{
+  "name": "render-prop-composer",
+  "version": "1.0.0",
+  "description": "Easily compose render props in React and Preact.",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":
+      "mkdir -p dist && babel src/main.js --out-file dist/main.js && uglifyjs -c -m -o dist/main.js -- dist/main.js"
+  },
+  "keywords": ["React", "Preact", "Render", "Props", "Compose"],
+  "author": "Evan M Jones <evanjones4040@gmail.com> (https://evanjon.es/)",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "uglify-js": "^3.3.12"
+  }
+}
