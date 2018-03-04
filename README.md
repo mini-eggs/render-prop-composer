@@ -2,6 +2,8 @@
 
 Compatible with both React and Preact.
 
+`$ npm i -S render-prop-composer`
+
 ![](https://i.imgur.com/aplAl1v.png)
 
 #### Instead of:
