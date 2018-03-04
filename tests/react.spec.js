@@ -2,6 +2,7 @@ import React from "react";
 import Enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 import CreateComposer from "../dist/main.js";
+import ExampleApp from "./react.app";
 
 /**
  * Setup
@@ -76,5 +77,11 @@ describe("Ensure composing render props works for React.", () => {
     expect(a).toEqual(JSON.stringify(expecting));
     expect(b).toEqual(JSON.stringify(expecting));
     expect(a).toEqual(b);
+  });
+
+  it("Looks pretty, code-wise.", () => {
+    expect(Enzyme.mount(<ExampleApp />).text()).toEqual(
+      "Hi! My name is Evan. I work as a developer."
+    );
   });
 });

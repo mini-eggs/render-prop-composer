@@ -2,6 +2,8 @@
 
 Compatible with both React and Preact.
 
+![](https://i.imgur.com/aplAl1v.png)
+
 #### Instead of:
 
 ```javascript
